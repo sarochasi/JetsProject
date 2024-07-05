@@ -58,6 +58,7 @@ public abstract class Jet {
 	public String toString() {
 		return " Model: " + model + ", Speed: " + speed + ", Range: " + range + ", Price: " + price;
 	}
+
 	
 	
 }

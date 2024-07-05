@@ -67,12 +67,18 @@ public class AirField {
 	}
 
 	public void loadAllCargo() {
-		// TODO Auto-generated method stub
 		
+		for (int i = 0; i < jets.size(); i++) {
+			if(jets.get(i) instanceof CargoCarrier)
+			((CargoJet) jets.get(i)).loadCargo();
+		}		
 	}
 
 	public void dogFight() {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < jets.size(); i++) {
+			if(jets.get(i) instanceof FighterJet)
+			((FighterJet) jets.get(i)).fight();
+		}	
 		
 	}
 
