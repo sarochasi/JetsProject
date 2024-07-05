@@ -54,7 +54,7 @@ public class JetsApp {
 			
 			case 7:
 				System.out.println("Choose the jet type to add: ");
-				System.out.println("1. Cargo jet \n 2. Fighter jet \n3. Passenger jet");
+				System.out.println("1. Cargo jet \n2. Fighter jet \n3. Passenger jet");
 				System.out.print("Enter you choice: ");
 				int option = keyboard.nextInt();
 				System.out.println("Enter the jet model: ");
