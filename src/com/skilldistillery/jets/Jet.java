@@ -50,8 +50,7 @@ public abstract class Jet {
 	public abstract void fly();
 	
 	public double getSpeedInMach() {
-		return speed;
-		
+		return speed;	
 	}
 
 	@Override
