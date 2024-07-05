@@ -6,7 +6,7 @@ public class CargoJet extends Jet implements CargoCarrier{
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	@Override
 	public void loadCargo() {
 		System.out.println(getModel() + " is loading cargo.");
@@ -14,9 +14,18 @@ public class CargoJet extends Jet implements CargoCarrier{
 
 	@Override
 	public void fly() {
-		System.out.println("I'm a Cargojet. Noise?????"); //TODO create****
-		
+		double flightTime = getRange() /getSpeed();
+		System.out.println(this);
+		System.out.println("Flight time until empty: " + flightTime);
+		System.out.println();
 	}
+
+	@Override
+	public String toString() {
+		return "Cargo jet," + super.toString();
+	}
+	
+	
 
 	
 }
