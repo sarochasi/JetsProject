@@ -12,11 +12,14 @@ public class AirField {
 		jets = new ArrayList<>();
 		//create 5 different jet objects, add them to list
 		
+		
 	}
 	
 	//DO NOT CREATE A getJets() method.
 	
 	//add jet method that accept an argument for a jet and add it to a list
-	
+	public void addJet(ArrayList<Jet> jet) {
+		
+	}
 
 }

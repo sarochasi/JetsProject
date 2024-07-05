@@ -11,10 +11,24 @@ public class JetsApp {
 	public static void main(String[] args) {
 		JetsApp ja = new JetsApp();
 		
+		
+		
 		ja.launchApp();
 	}
 	
+
+	
+	public JetsApp() {
+		super();
+	}
+
 	public void launchApp() {
+		
+		
+		
+	}
+	
+	public void displayUserMenu() {
 		
 	}
 }
