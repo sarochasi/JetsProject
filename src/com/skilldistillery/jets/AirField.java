@@ -84,6 +84,7 @@ public class AirField {
 	}
 	
 	public void removeJet(int index) {
+		
 		if(index >= 0 && index < jets.size()) {
 			System.out.println(jets.get(index-1).getModel() + " was removed.");
 			jets.remove(index-1);
