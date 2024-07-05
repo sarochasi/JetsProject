@@ -88,7 +88,10 @@ public class JetsApp {
 				break;
 				
 			case 8:
-				airfield.removeJet();
+				airfield.listFleet();
+				System.out.println("Enter index of jet to remove: ");
+				int index = keyboard.nextInt();
+				airfield.removeJet(index);
 				break;
 			case 9:
 				System.out.println("Good bye");

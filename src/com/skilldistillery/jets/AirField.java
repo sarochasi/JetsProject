@@ -21,14 +21,11 @@ public class AirField {
 	
 	//DO NOT CREATE A getJets() method.
 	
-	//add jet method that accept an argument for a jet and add it to a list
-	public void addJet(Jet jet) {
-		jets.add(jet);
-	}
+
 	
 	public void listFleet() {
 		for (int i = 0; i < jets.size(); i++) {
-			System.out.println(jets.get(i).toString());
+			System.out.println((i+1) + ". " + jets.get(i).toString());
 		}
 	}
 	
@@ -81,15 +78,21 @@ public class AirField {
 		}	
 		
 	}
-
-	public void removeJet() {
-		// TODO Auto-generated method stub
+	
+	public void addJet(Jet jet) {
+		jets.add(jet);
+	}
+	
+	public void removeJet(int index) {
+		if(index >= 0 && index < jets.size()) {
+			System.out.println(jets.get(index-1).getModel() + " was removed.");
+			jets.remove(index-1);
+			
+		}
+		else {
+			System.out.println("Invalid index.");
+		}
 		
 	}
-
-
-	
-	
-	
 
 }

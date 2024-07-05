@@ -20,12 +20,5 @@ public class CargoJet extends Jet implements CargoCarrier{
 		System.out.println();
 	}
 
-	@Override
-	public String toString() {
-		return "Cargo jet," + super.toString();
-	}
-	
-	
-
 	
 }

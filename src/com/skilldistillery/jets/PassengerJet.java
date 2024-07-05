@@ -20,10 +20,5 @@ public class PassengerJet extends Jet{
 		
 	}
 	
-	@Override
-	public String toString() {
-		return "Passenger jet," + super.toString();
-	}
 
-	
 }
